@@ -1,0 +1,73 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+}
+
+android {
+    compileSdk 33
+    namespace "ua.ilyadreamix.everyday"
+
+    defaultConfig {
+        applicationId "ua.ilyadreamix.everyday"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion composeCompiler
+    }
+
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+}
+
+dependencies {
+    // AndroidX
+    implementation "androidx.core:core-ktx:$coreKtx"
+    implementation "androidx.compose.ui:ui:$compose"
+    implementation "androidx.compose.material:material:$material"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$runtimeKtx"
+    implementation "androidx.activity:activity-compose:$compsoseActivity"
+    implementation "androidx.navigation:navigation-compose:$navigation"
+    implementation "androidx.compose.material:material-icons-extended:$compose"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleVM"
+    implementation "androidx.constraintlayout:constraintlayout-compose:$constraintLayout"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+
+    // Debug
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose"
+}

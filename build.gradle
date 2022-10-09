@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+        compose          = "1.3.0-rc01"
+        compsoseActivity = "1.6.0"
+        composeCompiler  = "1.3.1"
+        coreKtx          = "1.9.0"
+        runtimeKtx       = "2.5.1"
+        material         = "1.2.1"
+        navigation       = "2.5.2"
+        lifecycleVM      = "2.6.0-alpha02"
+        coroutines       = "1.6.4"
+        gradleTools      = "7.3.0"
+        kotlinGradle     = "1.7.10"
+        constraintLayout = "1.0.1"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleTools"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinGradle"
+    }
+}
+
+plugins {
+    id "com.android.application"      version "7.3.0"  apply false
+    id "com.android.library"          version "7.3.0"  apply false
+    id "org.jetbrains.kotlin.android" version "1.7.10" apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
