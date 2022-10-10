@@ -38,7 +38,7 @@ fun AuthScreen() {
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center,
-                    modifier = Modifier.padding(top = 12.dp, start = 12.dp, end = 12.dp)
+                    modifier = Modifier.padding(top = 12.dp, start = 12.dp, end = 12.dp).imePadding()
                 ) {
                     // Logo and text
                     Logo(64.sp, Modifier.padding(bottom = 10.dp))

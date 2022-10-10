@@ -9,7 +9,7 @@
     <string name="auth_signin_button">Sign In</string>
     <string name="auth_continue_with_google">Continue with Google</string>
     <string name="auth_or">Or</string>
-    <string name="auth_email_text">Enter email</string>
-    <string name="auth_password_text">Enter password</string>
+    <string name="auth_email_hint">Enter email</string>
+    <string name="auth_password_hint">Enter password</string>
     <string name="auth_dont_have_account">Don\'t have an account?</string>
 </resources>

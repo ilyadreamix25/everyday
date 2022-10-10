@@ -5,12 +5,12 @@
     <string name="auth_signin">Вход</string>
     <string name="auth_signup">Регистрация</string>
     <string name="auth_signin_text">Введите свои данные</string>
-    <string name="auth_email">E-Mail</string>
+    <string name="auth_email">Почта</string>
     <string name="auth_password">Пароль</string>
     <string name="auth_signin_button">Войти</string>
     <string name="auth_continue_with_google">Продолжить с Google</string>
     <string name="auth_or">Или</string>
-    <string name="auth_email_text">Введите e-mail</string>
-    <string name="auth_password_text">Введите пароль</string>
+    <string name="auth_email_hint">Введите почту</string>
+    <string name="auth_password_hint">Введите пароль</string>
     <string name="auth_dont_have_account">У вас нет аккаунта?</string>
 </resources>

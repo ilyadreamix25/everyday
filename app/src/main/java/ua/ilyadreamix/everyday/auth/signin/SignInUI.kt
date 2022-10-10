@@ -50,7 +50,7 @@ fun SignInUI(
         RoundedTextField(
             icon = Icons.Rounded.Email,
             label = stringResource(R.string.auth_email),
-            placeholder = stringResource(R.string.auth_email_text),
+            placeholder = stringResource(R.string.auth_email_hint),
             value = email,
             modifier = Modifier
                 .fillMaxWidth()
@@ -65,7 +65,7 @@ fun SignInUI(
         RoundedTextField(
             icon = Icons.Rounded.Password,
             label = stringResource(R.string.auth_password),
-            placeholder = stringResource(R.string.auth_password_text),
+            placeholder = stringResource(R.string.auth_password_hint),
             value = password,
             modifier = Modifier
                 .fillMaxWidth()
@@ -92,8 +92,7 @@ fun SignInUI(
         // Login button
         TextFieldSizedRoundedButton(
             text = stringResource(R.string.auth_signin_button),
-            enabled = isLoading,
-            modifier = Modifier.imePadding()
+            enabled = isLoading
         ) {
             // Nothing
         }
